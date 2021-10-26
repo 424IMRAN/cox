@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion  Component Renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Accordion))
+    className="makeStyles-noBoxShadow-5"
+    expanded={false}
+    onChange={[Function]}
+  >
+    <WithStyles(ForwardRef(AccordionSummary))
+      expandIcon={
+        <Memo
+          className="makeStyles-heading-2"
+        />
+      }
+    >
+      <Typography
+        align="left"
+        className="makeStyles-heading-2"
+        variant="subtitle2"
+      >
+        test header
+      </Typography>
+    </WithStyles(ForwardRef(AccordionSummary))>
+    <WithStyles(ForwardRef(AccordionDetails))>
+      test
+    </WithStyles(ForwardRef(AccordionDetails))>
+  </WithStyles(ForwardRef(Accordion))>
+</div>
+`;

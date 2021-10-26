@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Field  Component Renders correctly 1`] = `
+<Fragment>
+  <MuiPickersUtilsProvider
+    utils={[Function]}
+  >
+    <PickerWithState
+      allowKeyboardControl={true}
+      autoOk={true}
+      className="makeStyles-root-1"
+      disableToolbar={true}
+      invalidDateMessage="Invalid Date Format"
+      maxDate={2100-01-01T00:00:00.000Z}
+      maxDateMessage="Date should not be after maximal date"
+      minDate={1900-01-01T00:00:00.000Z}
+      minDateMessage="Date should not be before minimal date"
+      onChange={[MockFunction]}
+      openTo="date"
+      style={
+        Object {
+          "fontWeight": 400,
+        }
+      }
+      value={1975-08-19T17:45:30.000Z}
+      variant="static"
+      views={
+        Array [
+          "year",
+          "date",
+        ]
+      }
+    />
+  </MuiPickersUtilsProvider>
+</Fragment>
+`;

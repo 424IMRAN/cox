@@ -1,0 +1,8 @@
+rootProject.name = 'backend'
+
+include 'DAO'
+include 'DTO'
+include 'Converter'
+include 'Services'
+include 'Rest'
+include 'Web'

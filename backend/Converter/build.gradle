@@ -1,0 +1,75 @@
+buildscript {
+	ext {
+		springBootVersion = SPRING_BOOT_VERSION
+	}
+	repositories {
+		mavenCentral()
+		maven {
+			url 'https://repo.spring.io/libs-milestone'
+		}
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+plugins {
+	id "io.spring.dependency-management" version "1.0.0.RELEASE"
+	id "java"
+	id 'net.ltgt.apt' version '0.9'
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'io.spring.dependency-management'
+
+
+
+sourceCompatibility = JAVA_VERSION
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+ext {
+	springBootVersion = SPRING_BOOT_VERSION
+	mapstructVersion = "1.4.2.Final"
+	lombokVersion = "1.18.20"
+	lombokMapstructBindingVersion = "0.2.0"
+}
+
+
+jar {
+	archiveBaseName = 'Converter'
+	archiveVersion = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = JAVA_VERSION
+repositories {
+	mavenCentral()
+	maven {
+		url 'https://repo.spring.io/libs-milestone'
+	}
+}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation "org.projectlombok:lombok:$lombokVersion"
+	implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+	annotationProcessor "org.projectlombok:lombok-mapstruct-binding:${lombokMapstructBindingVersion}"
+	annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+	annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation project(":DAO")
+	implementation project(":DTO")
+}
+//
+//test {
+//	useJUnitPlatform()
+//}
+
+dependencyManagement {
+	imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+}

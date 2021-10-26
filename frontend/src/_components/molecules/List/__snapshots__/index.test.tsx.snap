@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List  Component Renders correctly 1`] = `
+<WithStyles(ForwardRef(List))
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(ListItem))
+    button={true}
+    key="hello"
+    onClick={[Function]}
+  >
+    <WithStyles(ForwardRef(ListItemText))
+      disableTypography={true}
+      primary={
+        <Typography
+          align="left"
+          className="makeStyles-primaryText-2"
+          variant="body2"
+        >
+          hello
+        </Typography>
+      }
+    />
+    <WithStyles(ForwardRef(ListItemSecondaryAction)) />
+  </WithStyles(ForwardRef(ListItem))>
+</WithStyles(ForwardRef(List))>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch Component Renders correctly 1`] = `
+<WithStyles(ForwardRef(Switch))
+  checked={false}
+  color="primary"
+  disabled={false}
+  inputProps={
+    Object {
+      "aria-label": "Switch",
+    }
+  }
+  onChange={[Function]}
+/>
+`;

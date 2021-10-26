@@ -1,0 +1,20 @@
+azure:
+  activedirectory:
+    #    client-id: 4a8e1cf9-29a1-4c89-87c8-66a74a9f906e
+    #    client-secret: KP77Q~p0JOEQuUEKBYwUxajrtgK~xedFygADB
+    #    tenant-id: 9feebc97-ff04-42c9-a152-767073872118
+#    client-id: ad842ca4-9929-444b-9912-ed2554776ca3
+#    client-secret: i5_7Q~grRQCkIioj1YSnjyhDlSsMao9uQ_5sS
+#    tenant-id: b33970b7-dc5c-499a-8c0b-94b9d51f7853
+    user-group:
+      allowed-group-names: developer
+      allowed-group-ids: 9baf21db-b4c8-4583-8a75-6c43db2fb17e    # When 'all' is used, all group id can be obtained.
+    post-logout-redirect-uri: http://localhost:8080
+    authorization-clients:
+      arm:
+        on-demand: false
+        scopes: https://management.core.windows.net/user_impersonation
+      graph:
+        scopes:
+          - https://graph.microsoft.com/User.Read
+          - https://graph.microsoft.com/Directory.Read.All

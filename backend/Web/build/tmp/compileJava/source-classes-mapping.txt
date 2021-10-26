@@ -1,0 +1,22 @@
+com/cox/selfservice/controller/AuthorityController.java
+ com.cox.selfservice.controller.AuthorityController
+com/cox/selfservice/controller/OnDemandClientController.java
+ com.cox.selfservice.controller.OnDemandClientController
+com/cox/selfservice/controller/RoleController.java
+ com.cox.selfservice.controller.RoleController
+com/cox/selfservice/utils/JsonMapper.java
+ com.cox.selfservice.utils.JsonMapper
+com/cox/selfservice/controller/WebApiController.java
+ com.cox.selfservice.controller.WebApiController
+com/cox/selfservice/SwaggerConfig.java
+ com.cox.selfservice.SwaggerConfig
+com/cox/selfservice/controller/ClientController.java
+ com.cox.selfservice.controller.ClientController
+com/cox/selfservice/AuditConfig.java
+ com.cox.selfservice.AuditConfig
+com/cox/selfservice/SelfServiceApplication.java
+ com.cox.selfservice.SelfServiceApplication
+com/cox/selfservice/config/WebClientConfig.java
+ com.cox.selfservice.config.WebClientConfig
+com/cox/selfservice/AuditorAwareImpl.java
+ com.cox.selfservice.AuditorAwareImpl
