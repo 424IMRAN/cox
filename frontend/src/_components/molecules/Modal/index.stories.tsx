@@ -6,7 +6,7 @@ import baseTheme from '../../../core-utils/theme'
 import TextField from '../../atoms/TextField'
 
 export default {
-  title: 'molecule/Modal',
+  title: 'molecules/Modal',
   component: Modal,
   argTypes: {},
 } as Meta

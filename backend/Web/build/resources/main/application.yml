@@ -1,6 +1,3 @@
-# WebapiA is an optional client, we can access obo resource servers.
-# We can also access a custom server according to the webapiA client.
-
 azure:
   activedirectory:
     #    client-id: 4a8e1cf9-29a1-4c89-87c8-66a74a9f906e
@@ -21,10 +18,3 @@ azure:
         scopes:
           - https://graph.microsoft.com/User.Read
           - https://graph.microsoft.com/Directory.Read.All
-#      webapiA:  # This is used to demonstrate on-behalf-of function. Refs: https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow
-#        scopes:
-#          - <Web-API-A-app-id-url>/Obo.WebApiA.ExampleScope
-#      webapiB:  # This is used to demonstrate client_credentials type. Refs: https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow
-#        scopes:
-#          - api://<Web-API-B-app-id-url>/.default
-#        authorization-grant-type: client_credentials

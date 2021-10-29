@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme: Theme) =>
     checkBoxStyle: {
       paddingRight: '12px',
     },
+    defaultItemStyle: {
+      paddingBottom: '4px',
+      paddingTop: '4px',
+    },
   })
 )
 
@@ -31,8 +35,11 @@ type ListProps = {
   list: Array<any>
   rightIcon?: React.ReactNode
   checkedList?: boolean
-  onClick?: (index: number, value: any) => void
+  onClick?: (index: number | string, value: any) => void
+  handleActionClick?: any
   customStyle?: any
+  itemStyle?: any
+  secondaryItemStyle?: any
 }
 
 const List = ({
@@ -40,11 +47,14 @@ const List = ({
   checkedList,
   rightIcon,
   onClick,
+  handleActionClick,
   customStyle,
+  itemStyle,
+  secondaryItemStyle,
 }: ListProps) => {
   const classes = useStyles()
 
-  const handleClick = (value: number, idx: number) => () => {
+  const handleClick = (value: number | string, idx: number) => () => {
     onClick?.(idx, value)
   }
 
@@ -56,6 +66,7 @@ const List = ({
             key={item.value}
             button
             onClick={handleClick(item?.value, idx)}
+            classes={{ root: clsx(classes.defaultItemStyle, itemStyle) }}
           >
             {checkedList && (
               <ListItemIcon>
@@ -76,7 +87,12 @@ const List = ({
                 </Typography>
               }
             />
-            <ListItemSecondaryAction>{rightIcon}</ListItemSecondaryAction>
+            <ListItemSecondaryAction
+              className={secondaryItemStyle}
+              onClick={handleActionClick}
+            >
+              {rightIcon}
+            </ListItemSecondaryAction>
           </ListItem>
         )
       })}
@@ -89,6 +105,9 @@ List.defaultProps = {
   customStyle: null,
   rightIcon: null,
   onClick: null,
+  itemStyle: null,
+  secondaryItemStyle: null,
+  handleActionClick: null,
 }
 
 export default List

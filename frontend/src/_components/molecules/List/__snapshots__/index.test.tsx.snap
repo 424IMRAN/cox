@@ -6,6 +6,11 @@ exports[`List  Component Renders correctly 1`] = `
 >
   <WithStyles(ForwardRef(ListItem))
     button={true}
+    classes={
+      Object {
+        "root": "makeStyles-defaultItemStyle-4",
+      }
+    }
     key="hello"
     onClick={[Function]}
   >

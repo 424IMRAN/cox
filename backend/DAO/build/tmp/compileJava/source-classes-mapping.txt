@@ -8,3 +8,7 @@ com/cox/selfservice/dao/entity/base/BasicBaseEntity.java
  com.cox.selfservice.dao.entity.base.BasicBaseEntity
 com/cox/selfservice/dao/entity/alarmsetting/AlarmSettingDAO.java
  com.cox.selfservice.dao.entity.alarmsetting.AlarmSettingDAO
+com/cox/selfservice/dao/repository/jpa/userRepository/UserRepository.java
+ com.cox.selfservice.dao.repository.jpa.userRepository.UserRepository
+com/cox/selfservice/dao/entity/users/Users.java
+ com.cox.selfservice.dao.entity.users.Users

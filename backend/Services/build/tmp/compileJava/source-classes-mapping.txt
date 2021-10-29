@@ -8,3 +8,7 @@ com/cox/selfservice/services/base/GenericService.java
  com.cox.selfservice.services.base.GenericService
 com/cox/selfservice/services/alarmsetting/AlarmSettingService.java
  com.cox.selfservice.services.alarmsetting.AlarmSettingService
+com/cox/selfservice/services/users/UserServiceImpl.java
+ com.cox.selfservice.services.users.UserServiceImpl
+com/cox/selfservice/services/users/UserService.java
+ com.cox.selfservice.services.users.UserService

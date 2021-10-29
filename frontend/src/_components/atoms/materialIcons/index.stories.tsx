@@ -146,6 +146,6 @@ export const infoIcon = Template.bind({});
 infoIcon.args = { icon: "info_outlined",fontSize:"small",iconColor:COLORS.TERTIARY_GREY_300};
 
 export const editoffIcon = Template.bind({});
-editoffIcon.args = { icon: "edit_off",fontSize:"small"};
+editoffIcon.args = { icon: "edit_off",fontSize:"small",type:"filled"};
 
 

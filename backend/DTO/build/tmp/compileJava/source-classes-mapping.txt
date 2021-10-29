@@ -12,3 +12,5 @@ com/cox/selfservice/dto/base/MessageType.java
  com.cox.selfservice.dto.base.MessageType
 com/cox/selfservice/dto/base/Response.java
  com.cox.selfservice.dto.base.Response
+com/cox/selfservice/dto/users/Users.java
+ com.cox.selfservice.dto.users.Users

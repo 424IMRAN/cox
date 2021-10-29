@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class AuthorityController {
-    @GetMapping("Admin")
+    @GetMapping("User")
     @ResponseBody
-    @PreAuthorize("hasAuthority('APPROLE_Admin')")
+    @PreAuthorize("hasAuthority('ROLE_USER')")
     public String Admin() {
         return "Admin message";
     }

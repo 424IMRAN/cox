@@ -24,6 +24,7 @@ footerSelect.args = {
   styles: {
     width: '52px',
     height: theme.spacing(7),
+    marginLeft: '18px',
   },
   placeholderValue: undefined,
   placeholderColor: COLORS.TEXT_500,
@@ -39,6 +40,8 @@ actionSelect.args = {
   styles: {
     width: theme.spacing(43),
     height: theme.spacing(7),
+
+    marginLeft: '18px',
   },
   placeholderValue: 'Select',
   placeholderColor: COLORS.TEXT_500,
@@ -54,6 +57,8 @@ dateSelect.args = {
   styles: {
     width: '54px',
     height: theme.spacing(7),
+
+    marginLeft: '18px',
   },
   placeholderValue: 'DD',
   placeholderColor: COLORS.TEXT_500,
@@ -76,6 +81,8 @@ timeSelect.args = {
     height: theme.spacing(10),
     border: `1px solid ${COLORS.TRANSPARENT_GREY_500}`,
     borderRadius: theme.spacing(2),
+
+    marginLeft: '18px',
   },
   placeholderValue: 'Pick from list',
   placeholderColor: COLORS.TEXT_700,

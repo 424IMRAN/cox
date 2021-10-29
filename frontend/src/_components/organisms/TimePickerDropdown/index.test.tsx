@@ -2,9 +2,8 @@
 import { screen, render } from '@testing-library/react'
 import TimePicker from '.'
 
-const mockClick = jest.fn()
 test('timepicker should be displayed', () => {
-  render(<TimePicker handleChange={mockClick} />)
+  render(<TimePicker changedSoakTime={(value: number) => console.log(value)} />)
   const timePicker = screen.getByTestId('timePickerTest')
   expect(timePicker).toBeVisible()
 })

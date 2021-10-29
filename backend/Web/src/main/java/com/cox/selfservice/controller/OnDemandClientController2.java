@@ -12,15 +12,15 @@ import static com.cox.selfservice.utils.JsonMapper.toJsonString;
 
 
 @Controller
-public class OnDemandClientController {
+public class OnDemandClientController2 {
 
-    @GetMapping("/arm")
-    @ResponseBody
-    public String arm(
-        @RegisteredOAuth2AuthorizedClient("arm") OAuth2AuthorizedClient armClient
-    ) {
-        // toJsonString() is just a demo.
-        // oAuth2AuthorizedClient contains access_token. We can use this access_token to access resource server.
-        return toJsonString(armClient);
-    }
+//    @GetMapping("/arm")
+//    @ResponseBody
+//    public String arm(
+//        @RegisteredOAuth2AuthorizedClient("arm") OAuth2AuthorizedClient armClient
+//    ) {
+//        // toJsonString() is just a demo.
+//        // oAuth2AuthorizedClient contains access_token. We can use this access_token to access resource server.
+//        return toJsonString(armClient);
+//    }
 }

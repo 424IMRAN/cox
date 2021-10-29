@@ -3,7 +3,7 @@
 exports[`Pagination Testing Matches Snapshot 1`] = `
 <div>
   <div
-    class="MuiTablePagination-root"
+    class="MuiTablePagination-root makeStyles-paginationStyle-1"
   >
     <div
       class="MuiToolbar-root MuiToolbar-regular MuiTablePagination-toolbar MuiToolbar-gutters"
@@ -13,7 +13,7 @@ exports[`Pagination Testing Matches Snapshot 1`] = `
       />
       <p
         class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-        id="mui-46485"
+        id="mui-24324"
       >
         Rows per page:
       </p>
@@ -22,19 +22,21 @@ exports[`Pagination Testing Matches Snapshot 1`] = `
       >
         <div
           aria-haspopup="listbox"
-          aria-labelledby="mui-46485 mui-61721"
+          aria-labelledby="mui-24324 mui-49962"
           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-          id="mui-61721"
+          id="mui-49962"
           role="button"
           tabindex="0"
         >
-          10
+          <span>
+            ​
+          </span>
         </div>
         <input
           aria-hidden="true"
           class="MuiSelect-nativeInput"
           tabindex="-1"
-          value="10"
+          value="1"
         />
         <svg
           aria-hidden="true"
@@ -50,7 +52,7 @@ exports[`Pagination Testing Matches Snapshot 1`] = `
       <p
         class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
       >
-        21-30 of 100
+        2-1 of 1
       </p>
       <div
         class="MuiTablePagination-actions"
@@ -82,8 +84,9 @@ exports[`Pagination Testing Matches Snapshot 1`] = `
         </button>
         <button
           aria-label="Next page"
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
-          tabindex="0"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit Mui-disabled Mui-disabled"
+          disabled=""
+          tabindex="-1"
           title="Next page"
           type="button"
         >
@@ -101,9 +104,6 @@ exports[`Pagination Testing Matches Snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
         </button>
       </div>
     </div>

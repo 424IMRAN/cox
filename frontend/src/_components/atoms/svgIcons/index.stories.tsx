@@ -11,7 +11,7 @@ import reverse from '../../../assets/reverse.svg'
 import bargraph from '../../../assets/bargraph.svg'
 import prod from '../../../assets/prod.svg'
 import editoff from '../../../assets/editoff.svg'
-
+import search from '../../../assets/Vector.svg'
 import dragger from '../../../assets/dragger.svg'
 import { ThemeProvider } from "@material-ui/styles";
 import baseTheme from '../../../core-utils/theme'
@@ -30,7 +30,7 @@ const Template: Story<IconCompProps> = (args) => {
 };
 
 export const sort = Template.bind({});
-sort.args={icon:Vector}
+sort.args={icon:Vector ,iconColor:"red"}
 
 export const settingsIcon = Template.bind({});
 settingsIcon.args={icon:settings}
@@ -62,6 +62,9 @@ distributeIcon.args={icon:distribute}
 
 export const reverseIcon = Template.bind({});
 reverseIcon.args={icon:reverse}
+
+export const searchIcon = Template.bind({});
+searchIcon.args={icon:search}
 
 // export const editoffIcon = Template.bind({});
 // editoffIcon.args={icon:editoff}

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeder  Component Renders correctly 1`] = `
+<WithStyles(ForwardRef(Grid))
+  alignItems="center"
+  className="makeStyles-headerGroup-3"
+  container={true}
+  direction="row"
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <CheckBoxComponent
+      customStyle="makeStyles-checkBoxStyle-4 makeStyles-rightSpacing-6"
+      handleChange={null}
+      indeterminate={true}
+      isChecked={false}
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <Typography
+      align="left"
+      className="makeStyles-selectedText-5 makeStyles-rightSpacing-6"
+      variant="body2"
+    >
+      6 selected
+    </Typography>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    item={true}
+    spacing={3}
+    xs={8}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+    >
+      <ButtonComponent
+        className="makeStyles-buttonStyle-7"
+        color="#FFFFFF"
+        height="28px"
+        startIcon="edit"
+        textStyle="makeStyles-selectedText-5"
+        variant="outlined"
+      >
+        Edit
+      </ButtonComponent>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+    >
+      <ButtonComponent
+        className="makeStyles-buttonStyle-7"
+        color="#FFFFFF"
+        height="28px"
+        startIcon="history"
+        textStyle="makeStyles-selectedText-5"
+        variant="outlined"
+      >
+        History
+      </ButtonComponent>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

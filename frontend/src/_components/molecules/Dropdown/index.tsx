@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { MenuItem, Select, ThemeProvider } from '@material-ui/core'
 import React, { CSSProperties } from 'react'
 import theme from '../../../core-utils/theme'
@@ -10,7 +11,10 @@ export interface SelectButtonProps {
   placeholderValue: string | undefined
   placeholderColor: string | undefined
   value: string
-  handleChange: () => void
+  handleChange: any
+  selectStyle?: string | undefined
+  disable?: boolean
+  menuItemsStyle?: CSSProperties
 }
 
 const SelectComponent: React.FC<SelectButtonProps> = ({
@@ -20,7 +24,10 @@ const SelectComponent: React.FC<SelectButtonProps> = ({
   placeholderValue,
   placeholderColor,
   value,
+  disable,
   handleChange,
+  selectStyle,
+  menuItemsStyle,
 }) => {
   return (
     <ThemeProvider theme={theme}>
@@ -40,10 +47,13 @@ const SelectComponent: React.FC<SelectButtonProps> = ({
             horizontal: 'center',
           },
           getContentAnchorEl: null,
+          style: menuItemsStyle,
         }}
         defaultValue="none"
         style={styles}
         displayEmpty
+        classes={{ selectMenu: selectStyle }}
+        disabled={disable}
       >
         {placeholderValue === undefined ? (
           <MenuItem value="">

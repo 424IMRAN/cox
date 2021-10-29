@@ -174,10 +174,10 @@ const theme = createTheme({
             color: COLORS.TERTIARY_GREY_50,
           },
         },
-        '&:hover': {
-          backgroundColor: COLORS.TEXT_900,
-          boxShadow: 'none',
-        },
+        // '&:hover': {
+        //   backgroundColor: COLORS.TEXT_900,
+        //   boxShadow: 'none',
+        // },
       },
       indeterminate: {
         '& img': {
@@ -235,6 +235,7 @@ const theme = createTheme({
     MuiListItem: {
       gutters: {
         paddingLeft: '12px',
+        // paddingLeft: '0px',
       },
     },
     MuiPopover: {
@@ -245,6 +246,32 @@ const theme = createTheme({
     MuiMenu: {
       paper: {
         margin: '0px',
+        padding: '0px',
+      },
+    },
+    MuiSvgIcon: {
+      fontSizeSmall: {
+        fontSize: '26px',
+      },
+    },
+    MuiAccordionSummary: {
+      root: {
+        minHeight: '0px',
+        height: '23px',
+        margin: '0px',
+        marginBottom: '16px',
+        padding: '0px',
+        '&.Mui-expanded': {
+          minHeight: '0px',
+        },
+      },
+      content: {
+        margin: '0px',
+        padding: '0px',
+      },
+    },
+    MuiAccordionDetails: {
+      root: {
         padding: '0px',
       },
     },
@@ -274,6 +301,11 @@ const theme = createTheme({
         padding: '4px 8px 4px 4px',
       },
     },
+    MuiIcon: {
+      fontSizeSmall: {
+        fontSize: '15.33px !important',
+      },
+    },
     MuiButton: {
       root: {
         height: '42px',
@@ -287,7 +319,7 @@ const theme = createTheme({
 
         boxShadow: 'none',
         '&:hover': {
-          backgroundColor: COLORS.PRIMARY_COLOR_300,
+          backgroundColor: COLORS.TERTIARY_GREY_900,
           boxShadow: 'none',
         },
         '&:disabled': {
@@ -304,8 +336,8 @@ const theme = createTheme({
 
         boxSizing: 'border-box',
         '&:hover': {
-          backgroundColor: COLORS.SECONDARY_COLOR_50,
-          color: COLORS.GAMMA_WHITE,
+          backgroundColor: COLORS.TRANSPARENT_GREY_300,
+          color: COLORS.TERTIARY_GREY_50,
 
           boxShadow: 'none',
         },
@@ -422,6 +454,9 @@ const theme = createTheme({
           borderWidth: 0,
         },
       },
+      adornedEnd: {
+        borderRadius: '8px',
+      },
     },
     MuiSwitch: {
       colorPrimary: {
@@ -441,6 +476,7 @@ const theme = createTheme({
     MuiDialogContent: {
       root: {
         margin: '4px',
+        padding: '8px 4px',
       },
     },
     MuiDialogActions: {

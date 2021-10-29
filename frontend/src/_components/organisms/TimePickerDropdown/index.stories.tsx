@@ -4,17 +4,20 @@ import theme from '../../../core-utils/theme'
 import { ThemeProvider } from '@material-ui/core/styles'
 
 export default {
-  title: 'molecules/TimePicker',
+  title: 'organisms/TimePicker',
   component: TimePicker,
-  argTypes: {
-    handleChange: { action: 'clicked' },
-  },
 } as Meta
 
-const Template: Story<TimePickerProps> = ({ handleChange }) => (
+const Template: Story<TimePickerProps> = ({ styles, changedSoakTime }) => (
   <ThemeProvider theme={theme}>
-    <TimePicker handleChange={handleChange} />
+    <TimePicker styles={styles} changedSoakTime={changedSoakTime} />
   </ThemeProvider>
 )
 
 export const TimePickerStory = Template.bind({})
+TimePickerStory.args = {
+  styles: {
+    marginLeft: '18px',
+  },
+  changedSoakTime: (value: number) => console.log(value),
+}

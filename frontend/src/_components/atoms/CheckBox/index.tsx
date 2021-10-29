@@ -1,5 +1,6 @@
 import { Checkbox } from '@material-ui/core'
 import React from 'react'
+import CheckboxInderminate from '../../../assets/checkboxIndeterminate.svg'
 
 type CheckBoxProps = {
   isChecked?: boolean
@@ -25,7 +26,10 @@ const CheckBoxComponent: React.FC<CheckBoxProps> = ({
       onChange={handleChange}
       indeterminate={indeterminate}
       indeterminateIcon={
-        <img src={indeterminateIconSrc} alt="indeterminateIcon" />
+        <img
+          src={indeterminateIconSrc ?? CheckboxInderminate}
+          alt="indeterminateIcon"
+        />
       }
       {...restProps}
       className={customStyle}

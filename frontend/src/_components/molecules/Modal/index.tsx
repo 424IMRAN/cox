@@ -44,7 +44,7 @@ const DialogTitle = (props: DialogTitleProps) => {
 type ModalProps = {
   handleModalClose: (close: boolean) => void
   open: boolean
-  title: string
+  title: string | React.ReactNode
   children: React.ReactNode
   primaryButton?: React.ReactNode
   secondaryButton?: React.ReactNode

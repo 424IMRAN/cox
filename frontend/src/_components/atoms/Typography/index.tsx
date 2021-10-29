@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import PropTypes from 'prop-types'
 import { PropTypes as MuiProps } from '@material-ui/core'
 import MUITypography from '@material-ui/core/Typography'
@@ -6,7 +7,7 @@ import { getMappedVariant } from '../../../core-utils/helper'
 
 type TypographyProps = {
   variant: string
-  children: string
+  children: string | ReactNode
   className?: string
   align?: MuiProps.Alignment
   styles?: CSSProperties

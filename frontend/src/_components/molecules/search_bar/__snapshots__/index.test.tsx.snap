@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searchbar test Should match the snapshot 1`] = `
+<div
+  class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+>
+  <div
+    class="makeStyles-search-1"
+  >
+    <div
+      class="MuiInputBase-root"
+    >
+      <input
+        class="MuiInputBase-input makeStyles-inputInput-4"
+        placeholder="Search..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="makeStyles-searchIcon-2"
+    >
+      <img
+        alt="icon"
+        class="makeStyles-Icon-3"
+        data-testid="svgicon"
+        height="16.93px"
+        src="[object Object]"
+        width="16.93px"
+      />
+    </div>
+  </div>
+</div>
+`;

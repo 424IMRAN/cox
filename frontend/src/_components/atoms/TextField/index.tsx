@@ -80,8 +80,8 @@ const TextField = ({
           endAdornment: (
             <InputAdornment position="end">{endAdorment}</InputAdornment>
           ),
+          classes: { root: customStyle },
         }}
-        className={customStyle}
         name={name}
         margin={textFieldmargin(margin ?? '')}
         value={value}
