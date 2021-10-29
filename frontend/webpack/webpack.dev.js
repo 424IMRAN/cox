@@ -12,15 +12,18 @@ module.exports = {
      proxy: {
       '/oauth2/authorization/azure': {
         target: 'http://localhost:8080',
-        pathRewrite: { '^/login': '' },
         secure: false,
       },
       '/login/oauth2/code': {
         target: 'http://localhost:8080',
-        pathRewrite: { '^/home': '' },
         secure: false,
       },
-      
+      // '/': {
+      //   target: 'http://localhost:8080',
+      //   // pathRewrite: { '^/': '/home' },
+      //   changeOrigin: false
+      //   secure: false,
+      // },
     },
     historyApiFallback: true,
     open: true,
